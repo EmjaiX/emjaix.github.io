@@ -9,6 +9,15 @@ div {
     text-align: center;
     margin: auto;
     padding: 5vw;
+    padding-bottom: 0;
+    font-size: large;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    padding: 0;
 }
 
 .panel {
