@@ -25,21 +25,39 @@ div>div {
 
 .head {
     animation-duration: 4s;
+    animation-timing-function: ease-in-out;
     width: 350px;
     position: sticky;
     top: 0;
-    background-color: blue;
+    background-color: rgb(47, 47, 248);
     padding: 0;
 }
 
 .panel {
+    text-align: center;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.subpanel {
+.wel {
     width: 100%;
+    background-color: rgb(47, 47, 248);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.wel>* {
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+    color: lavender;
+}
+
+.subpanel {
+    margin-top: 10px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

@@ -1,6 +1,4 @@
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-console.log(screen.width);
-
 document.addEventListener("scroll", function() {
     let head = document.querySelector(".head");
     if (head.offsetTop > 54) {
