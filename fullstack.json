@@ -1,6 +1,6 @@
 {
     "img": "./img/fullstack.png",
-    "data": "<h2>Front-End</h2><p>I enjoy trying different approaches to the same problem as it provides a keen overview that some implementations, while not superior, can get the objective done.</p>",
+    "data": "<h2>Full Stack</h2><p>I enjoy trying different approaches to the same problem as it provides a keen overview that some implementations, while not superior, can get the objective done.</p>",
     "langauges": ["Java/JavaFX", "C++", "Python", "MySQL", "MariaDB", "Visual Basic"],
     "devtools": ["VSCode", "Github", "MySQL Workbench", "CLI", "NetBeans", "Visual Studio", "CLion"]
 }
