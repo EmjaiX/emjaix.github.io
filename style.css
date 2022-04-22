@@ -24,9 +24,7 @@ div>div {
 }
 
 .head {
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    width: 350px;
+    width: 100vw;
     position: sticky;
     top: 0;
     background-color: rgb(47, 47, 248);
@@ -68,7 +66,55 @@ div>div {
 .subpanel>*>img {
     width: 100px;
 }
+.buttonShowcase{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
 
+.showButton{
+    margin: auto;
+    flex-grow: 1;
+    color: darkred;
+    background-color: bisque;
+    border: none;
+    transition: 0.3s;
+    padding: 3vw;
+}
+.showButton:hover{
+    transform: translateY(-6px);
+    transition: 0.3s;
+    box-shadow: 0 6px bisque;
+    background-color: rgb(150, 147, 147);
+    cursor: pointer;
+}
+.showButton:active{
+    transform: translateY(-3px);
+    box-shadow: 0 3px bisque;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
 @media only screen and (max-width: 768px) {
     p {
         width: 90%;
