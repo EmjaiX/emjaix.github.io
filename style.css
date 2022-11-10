@@ -1,19 +1,22 @@
-:root{
+:root {
     --fgc1: rgb(47, 47, 248);
 }
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: Garamond, serif;
     overflow-x: hidden;
+    z-index: 10;
 }
 
-.page{
+.page {
     margin: auto;
     border: solid var(--fgc1);
     border-radius: 20px;
 }
+
 p {
     width: 30vw;
 }
@@ -72,13 +75,14 @@ div>div {
 .subpanel>*>img {
     width: 100px;
 }
-.buttonShowcase{
+
+.buttonShowcase {
     width: 80vw;
     display: flex;
     flex-direction: row;
 }
 
-.showButton{
+.showButton {
     margin: auto;
     flex-grow: 1;
     color: darkred;
@@ -88,44 +92,64 @@ div>div {
     padding: 3vw;
     font-size: larger;
 }
-.showButton:hover{
+
+.showButton:hover {
     transform: translateY(-6px);
     transition: 0.3s;
     box-shadow: 0 6px bisque;
     background-color: rgb(150, 147, 147);
     cursor: pointer;
 }
-.showButton:active{
+
+.showButton:active {
     transform: translateY(-3px);
     box-shadow: 0 3px bisque;
 }
 
+.modalBG {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.342);
+    display: flex;
+}
+
+.modal {
+    margin: auto;
+    min-width: 40%;
+    min-height: 45%;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
 
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f100; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 @media only screen and (max-width: 768px) {
     p {
         width: 90%;
     }
+
     .subpanel {
         flex-direction: column;
     }
