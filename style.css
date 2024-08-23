@@ -1,19 +1,35 @@
 :root {
     --fgc1: rgb(47, 47, 248);
+    --bgc1: rgb(204, 204, 255);
+    --bgc2: #9fd4ff;
+    --buttonbg1: ;
+    --buttonbg2: ;
+    --buttonfg1: ;
+    --buttonfg2: ;
 }
 
 body {
+    background-color: var(--bgc2);;
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: Garamond, serif;
     overflow-x: hidden;
     z-index: 10;
+    height: 100vh;
+    
+    background-image: url("src/img/BG.png");
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    
 }
 
+
 .page {
+    max-width: 90vw;
     margin: auto;
     border: solid var(--fgc1);
+    background-color: var(--bgc1);
     border-radius: 20px;
 }
 
@@ -35,27 +51,29 @@ div>div {
 }
 
 .head {
-    width: 100vw;
+    width: 100%;
     background-color: var(--fgc1);
-    padding: 0;
+    padding: 0 0 5px 0;
+    color: var(--bgc2);
 }
-
+.sub-head{
+    width: 30%;
+    border-radius: 0 0 25px 25px;
+    background-color: var(--bgc2);
+    padding: 0px 0 10px 0;
+    color: var(--fgc1);
+}
+.sub-head > *{
+    margin: 0;
+}
 .panel {
     text-align: center;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.wel {
-    width: 100%;
-    background-color: var(--fgc1);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.wel>* {
+.panel>* {
     font-size: larger;
     text-align: center;
     margin: auto;
