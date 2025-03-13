@@ -1,6 +1,6 @@
 :root {
     --fgc1: rgb(47, 47, 248);
-    --bgc1: rgb(204, 204, 255);
+    --bgc1: rgb(253, 253, 253);
     --bgc2: #9fd4ff;
     --buttonbg1: ;
     --buttonbg2: ;
@@ -54,7 +54,7 @@ div>div {
     width: 100%;
     background-color: var(--fgc1);
     padding: 0 0 5px 0;
-    color: var(--bgc2);
+    color: var(--bgc1);
 }
 .sub-head{
     width: 30%;
