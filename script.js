@@ -7,5 +7,13 @@ buttons.forEach((button)=>{
 })
 
 function load(name){
-    console.log(name);
+    let list = document.querySelectorAll(".panelMain")
+    list.forEach(element => {
+        element.classList.remove("panelMain"); // Remove mystyle class from DIV
+        element.classList.add("panelSub"); // Add newone class to DIV
+    });
+    let item = document.querySelector('#'+name)
+    item.classList.remove("panelSub");
+    item.classList.add("panelMain");
+    // console.log(name);
 }

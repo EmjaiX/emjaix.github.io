@@ -1,12 +1,19 @@
 :root {
-    --fgc1: rgb(47, 47, 248);
-    --bgc1: rgb(253, 253, 253);
-    --bgc2: #9fd4ff;
-    --buttonbg1: ;
-    --buttonbg2: ;
+    --fgc1: rgb(0, 0, 0);
+    --bgc0: rgb(160, 159, 159);
+    --bgc1: rgb(186, 226, 228);
+    --bgc2: #0f283d;
+    --buttonbg1:  #0f283d;
+    --buttonbg2: rgb(150, 147, 147);
     --buttonfg1: ;
     --buttonfg2: ;
+    --Text1: rgb(32, 32, 32);
+    --Text2:darkred;
+    --Text3:rgb(255, 214, 214);
+    --Text4: rgb(215, 251, 253);
 }
+/* 
+box-shadow: 0 6px bisque; */
 
 body {
     background-color: var(--bgc2);;
@@ -18,7 +25,7 @@ body {
     z-index: 10;
     height: 100vh;
     
-    background-image: url("src/img/BG.png");
+    /* background-image: url("src/img/BG.png"); */
     background-repeat: repeat;
     background-size: 300px 300px;
     
@@ -27,10 +34,14 @@ body {
 
 .page {
     max-width: 90vw;
+    min-height: 80vh;
     margin: auto;
     border: solid var(--fgc1);
     background-color: var(--bgc1);
     border-radius: 20px;
+    box-shadow: -11px 10px 12px 8px var(--bgc0);
+    -webkit-box-shadow: -11px 10px 12px 8px var(--bgc0);
+    -moz-box-shadow: -11px 10px 12px 8px var(--bgc0);
 }
 
 p {
@@ -58,8 +69,11 @@ div>div {
 }
 .sub-head{
     width: 30%;
+    border-style: solid;
+    border-top-style: none;
+    border-width: 5px;
     border-radius: 0 0 25px 25px;
-    background-color: var(--bgc2);
+    border-color: var(--fgc1);
     padding: 0px 0 10px 0;
     color: var(--fgc1);
 }
@@ -79,17 +93,26 @@ div>div {
     margin: auto;
     color: lavender;
 }
-
-.subpanel {
-    margin-top: 10px;
-    width: 90%;
+.panelMain{
+    color:var(--Text1);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    border: indigo solid 1px;
-    border-radius: 15vw;
+    width: 90%;
+}
+.panelSub{
+    display: none;
+}
+.col{
+    margin: auto;
+    width: 40%;
 }
 
+.rightcol{
+
+}
+.leftcol{
+
+}
 .subpanel>*>img {
     width: 100px;
 }
@@ -103,8 +126,8 @@ div>div {
 .showButton {
     margin: auto;
     flex-grow: 1;
-    color: darkred;
-    background-color: bisque;
+    color: var(--Text3);
+    background-color: var(--fgc1);
     border: none;
     transition: 0.3s;
     padding: 3vw;
@@ -114,14 +137,20 @@ div>div {
 .showButton:hover {
     transform: translateY(-6px);
     transition: 0.3s;
-    box-shadow: 0 6px bisque;
-    background-color: rgb(150, 147, 147);
+    color: var(--bgc1);
+    box-shadow: 0 6px var(--buttonbg1);
+    background-color: var(--buttonbg2);
     cursor: pointer;
 }
 
 .showButton:active {
     transform: translateY(-3px);
-    box-shadow: 0 3px bisque;
+    box-shadow: 0 3px var(--buttonbg1);
+}
+.showButtonActive {
+    background-color: var(--bgc2);
+    color: var(--Text4);
+    /* background-color: var(--buttonbg2); */
 }
 
 .modalBG {
